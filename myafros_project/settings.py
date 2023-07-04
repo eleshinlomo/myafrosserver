@@ -26,6 +26,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'ai',
+    'member',
     'corsheaders',
     'rest_framework',
     'spanishagent',

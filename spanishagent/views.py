@@ -14,7 +14,7 @@ import openai
 openai.api_key = os.getenv("OPENAI_API_KEY", None)
 @csrf_exempt
 @api_view(['POST', 'GET'])
-@permission_classes((permissions.AllowAny,))
+@permission_classes([permissions.AllowAny])
 def translate_to_spanish(request):
     
     if request.method == 'POST' and openai.api_key is not None:
