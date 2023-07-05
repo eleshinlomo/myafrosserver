@@ -8,3 +8,9 @@ class Agent(models.Model):
     profile = models.CharField(max_length=500, blank=True, null=True)
     image = models.ImageField(upload_to='agent_images', blank=True, null=True)
     date_created = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ('id',)
+
+    def __str__(self):
+        return self.name
