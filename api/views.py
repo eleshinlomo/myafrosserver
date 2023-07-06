@@ -6,27 +6,14 @@ from django.views.decorators.csrf import csrf_exempt
 
 # serializers
 from .serializer import AgentSerializer
-from .serializer import MemberSerializer
+
 
 # models
-from member.models import Member
 from ai.models import Agent
 
 # object destructuring
 
-# find all users
-@api_view(['GET'])
-@permission_classes([permissions.AllowAny])
-def get_users(request):
-       members = Member.objects.all()
-       serializer = MemberSerializer(members, many = True)
-       return Response(serializer.data)
-       
 
-def get_user(request, pk):
-       member = Member.objects.get(id=pk)
-       serializer = MemberSerializer(member, many = False)
-       return Response(serializer.data)
        
 
 
