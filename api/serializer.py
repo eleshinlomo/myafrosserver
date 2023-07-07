@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from ai.models import Agent
+from agent.models import Agent
 
 
 

@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('ai', '0002_rename_user_input_agent_profile'),
+        ('agent', '0002_rename_user_input_agent_profile'),
     ]
 
     operations = [

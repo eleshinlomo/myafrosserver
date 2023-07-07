@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('ai', '0001_initial'),
+        ('agent', '0001_initial'),
     ]
 
     operations = [
