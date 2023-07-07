@@ -143,12 +143,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
+    'myafross.netlify.app'
 
 ]
 
 CORS_ALLOWED_ORIGINS = [
 'http://localhost:3000',
 'http://127.0.0.1:8000',
+'https://myafross.netlify.app',
+'https://myafrosserver.vercel.app'
 
 
 
