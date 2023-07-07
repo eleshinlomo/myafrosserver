@@ -143,7 +143,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'myafross.netlify.app'
+    'myafross.netlify.app',
+    'myafrosserver.vercel.app'
 
 ]
 
