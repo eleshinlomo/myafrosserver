@@ -1,30 +1,23 @@
-{   
+{
     "version": 2,
     "builds": [
       {
         "src": "myafros_project/wsgi.py",
         "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "python3.9"
-        }
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
       },
       {
-        "src": "build.sh",
+        "src": "build_files.sh",
         "use": "@vercel/static-build",
         "config": {
-          "disDir": "staticfiles_build"
+          "distDir": "staticfiles_build"
         }
       }
     ],
     "routes": [
       {
         "src": "/static/(.*)",
-        "dest": "staticfiles_build/$1"
-      },
-      {
-        "src": "/media/(.*)",
-        "dest": "media/$1"
+        "dest": "/static/$1"
       },
       {
         "src": "/(.*)",
