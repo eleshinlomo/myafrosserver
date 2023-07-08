@@ -145,7 +145,8 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '.netlify.app',
-    '.vercel.app'
+    '.vercel.app',
+    '.now.sh'
 
 ]
 
