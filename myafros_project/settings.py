@@ -147,7 +147,7 @@ ALLOWED_HOSTS = [
     '.netlify.app',
     '.vercel.app',
     '.now.sh',
-    '.myafros.com'
+    'myafros.com'
 
 ]
 
