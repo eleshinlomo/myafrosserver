@@ -17,7 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 
 
@@ -155,11 +155,9 @@ CORS_ALLOWED_ORIGINS = [
 'http://127.0.0.1:8000',
 'https://myafross.netlify.app',
 'https://myafrosclient.vercel.app',
-'https://myafrosserver.vercel.app'
-
-
 
 ]
+
 CORS_ALLOW_METHODS = [
     'DELETE',
     'GET',
