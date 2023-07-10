@@ -147,7 +147,8 @@ ALLOWED_HOSTS = [
     '.netlify.app',
     '.vercel.app',
     '.now.sh',
-    'myafros.com'
+    'myafros.com',
+    'www.myafros.com'
 
 ]
 
@@ -155,7 +156,8 @@ CORS_ALLOWED_ORIGINS = [
 'http://localhost:3000',
 'http://127.0.0.1:8000',
 'https://myafrosclient.vercel.app',
-'https://myafros.com'
+'https://myafros.com',
+'http://myafros.com'
 
 ]
 
