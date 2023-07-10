@@ -152,14 +152,16 @@ ALLOWED_HOSTS = [
 
 ]
 
-CORS_ALLOWED_ORIGINS = [
-'http://localhost:3000',
-'http://127.0.0.1:8000',
-'https://myafrosclient.vercel.app',
-'https://myafros.com',
-'http://myafros.com'
+CORS_ORIGIN_ALLOW_ALL = True 
 
-]
+# CORS_ALLOWED_ORIGINS = [
+# 'http://localhost:3000',
+# 'http://127.0.0.1:8000',
+# 'https://myafrosclient.vercel.app',
+# 'https://myafros.com',
+# 'http://myafros.com'
+
+# ]
 
 CORS_ALLOW_METHODS = [
     'DELETE',
