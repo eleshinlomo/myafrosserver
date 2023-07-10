@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'spanishagent',
+    'englishagent',
     'api',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -147,7 +148,7 @@ ALLOWED_HOSTS = [
     '.netlify.app',
     '.vercel.app',
     '.now.sh',
-    'myafros.com',
+    '.myafros.com',
     'www.myafros.com'
 
 ]

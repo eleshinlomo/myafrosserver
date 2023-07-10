@@ -19,7 +19,7 @@ def translate_to_spanish(request):
     
     if request.method == 'POST' and openai.api_key is not None:
         user_input = request.data.get('user_input')
-        prompt = f" translate to spanish: {user_input}"
+        prompt = f"  if prompt is in spanish respond with this 'You cannot speak spanish to me' else translate to spanish,: {user_input}"
 
         response = openai.Completion.create(
             model="text-davinci-003",
