@@ -142,29 +142,33 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    '.netlify.app',
-    '.vercel.app',
-    '.now.sh',
-    'myafros.com',
-    'www.myafros.com'
+# ALLOWED_HOSTS = [
+#     'localhost',
+#     '127.0.0.1',
+#     '.netlify.app',
+#     '.vercel.app',
+#     '.now.sh',
+#     'myafros.com',
+#     'www.myafros.com'
 
-]
+# ]
+
+ALLOWED_HOSTS=['*']
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 
 
 
-CORS_ALLOWED_ORIGINS = [
-'http://localhost:3000',
-'http://127.0.0.1:8000',
-'https://myafrosclient.vercel.app',
-'https://myafros.com',
-'https://www.myafros.com'
+# CORS_ALLOWED_ORIGINS = [
+# 'http://localhost:3000',
+# 'http://127.0.0.1:8000',
+# 'https://myafrosclient.vercel.app',
+# 'https://myafros.com',
+# 'https://www.myafros.com'
 
-]
+# ]
 
 CORS_ALLOW_METHODS = [
     'DELETE',
