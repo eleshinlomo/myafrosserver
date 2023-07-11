@@ -189,6 +189,10 @@ CORS_ALLOW_HEADERS = [
 
 CORS_ALLOW_CREDENTIALS = True
 
+CSRF_COOKIE_SECURE = False
+
+CSRF_COOKIE_SAMESITE = None
+
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
